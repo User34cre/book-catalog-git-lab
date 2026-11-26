@@ -53,3 +53,4 @@ class BookCatalog:
         Копия списка книг каталога.
     """
     return list(self._books)
+
