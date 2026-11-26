@@ -45,3 +45,11 @@ class BookCatalog:
         book = Book(title=clean_title, author=clean_author, year=year)
         self._books.append(book)
         return book
+
+    def list_books(self) -> List[Book]:
+    """Возвращает список всех книг в каталоге.
+
+    Returns:
+        Копия списка книг каталога.
+    """
+    return list(self._books)
